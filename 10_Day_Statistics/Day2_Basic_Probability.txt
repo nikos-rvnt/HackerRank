@@ -1,0 +1,5 @@
+
+Of the 36 possible pair numbers, 30 of them have a sum less than or equal 9. 
+So , 
+
+	P(max sum of 2 dices <= 9) = 30 / 36 = 5 / 6 .

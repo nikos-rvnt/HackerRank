@@ -1,0 +1,2 @@
+
+We are looking for P(Blue|Red) = P(Red|Blue)*P(Blue)/P(Red) = (3/6)*(4/7)/(3/7) = 4/6 = 2/3 .

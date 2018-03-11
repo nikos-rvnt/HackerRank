@@ -1,0 +1,7 @@
+
+Since one ball is drawn from each of the urn, the probability of 2 of the balls baing red and one black is :
+
+	P(2 red, 1 black) = P(red|X)P(red|Y)P(black|Z) + P(red|X)P(black|Y)P(red|Z) + P(black|X)P(red|Y)P(red|Z) = 
+			  = (4/7)*(5/9)*(4/8) + (4/7)*(4/9)*(4/8) + (3/7)*(5/9)*(4/8) = 
+			  = 80/504 + 64/504 + 60/504 =
+			  = 204/504 = 17/42 = 0.41

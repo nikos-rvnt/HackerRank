@@ -1,0 +1,5 @@
+
+
+Drawing a card without replacement of a suit of 13 cards, means that the probability that the next card is of the same suit is : 
+
+		P(x|x) = (1/4)*(12/51)/(1/4) = 12/51 . 

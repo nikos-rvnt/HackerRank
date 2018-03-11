@@ -1,0 +1,6 @@
+
+Since one of the two children is boy, the probaility that both of them are boys is :
+
+		P(B|B) = 1/3  ,
+
+because the possible pairs are : B-G , G-B , B-B .  
