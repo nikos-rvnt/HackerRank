@@ -1,0 +1,17 @@
+  #btn {
+    /* Set the background color to a shade of green */
+    background: #E8E8E8;
+    /* Center-align the text */
+    text-align: center;
+    /* Set the cursor to be a pointer */
+    cursor: pointer;
+    /* Set the width of the button */
+    width: 96px;
+    /* Set the height of the button */
+    height: 48px;
+    /* Set the font size */
+    font-size: 24px;
+    /* border */
+    border-style: solid;
+    border-width: 1px;
+}
