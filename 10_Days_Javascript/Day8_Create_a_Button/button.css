@@ -1,4 +1,4 @@
-  #btn {
+#btn {
     /* Set the background color to a shade of green */
     background: #E8E8E8;
     /* Center-align the text */
@@ -14,4 +14,9 @@
     /* border */
     border-style: solid;
     border-width: 1px;
+    position: absolute;
+    top: 50%;
+}
+.wrapper {
+    text-align: center;
 }
