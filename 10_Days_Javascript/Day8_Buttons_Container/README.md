@@ -9,3 +9,5 @@ After one clock-wise rotation, the button grid becomes:
 After two clock-wise rotation, the button grid becomes:
 
 # ![Alt text](https://github.com/nikos-rvnt/HackerRank/blob/master/10_Days_Javascript/Day8_Buttons_Container/buttonGrid_2rot.jpg) 
+
+and so on!
