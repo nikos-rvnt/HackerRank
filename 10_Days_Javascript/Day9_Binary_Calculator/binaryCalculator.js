@@ -1,6 +1,6 @@
 let txt_num = document.getElementById("res");
 var but = document.getElementById("btns");
-
+var row = 1
 /* This sets the action to perform on a click event */
 
 /* When pressing C (clear button) */
@@ -9,10 +9,18 @@ btnClr.onclick = function() {
 };
 /* When pressing 0 button */
 btn0.onclick = function(){
+    if(txt_num.innerHTML.length>=38 && row===1){
+        txt_num.innerHTML +="\n";
+        row = 2;
+    }
     txt_num.innerHTML +="0";  
 };
 /* When pressing 1 button */
 btn1.onclick = function(){
+    if(txt_num.innerHTML.length>=38 && row===1){
+        txt_num.innerHTML +="\n";
+        row = 2;
+    }
     txt_num.innerHTML +="1";  
 };
 /* When pressing + button */
@@ -48,11 +56,9 @@ btnEql.onclick = function(){
         if(hlp == 0){
             
            if(txt[i]!=" " && txt[i]!='+' && txt[i]!='-' && txt[i]!='*' && txt[i]!='/' ){       
-                //txt_num.innerHTML = "4545";
                 num1 += txt[i];
            }else if(txt[i]==="+") {
-               //txt = "4545";
-               txt_num.innerHTML = "42";
+               //txt_num.innerHTML = "42";
                 hlp = 1;
                 oper = 1;
                 i++;
@@ -73,37 +79,35 @@ btnEql.onclick = function(){
                 i++;    
             }
             else if(txt[i]===" "){
-                txt_num.innerHTML = "21";
+                //txt_num.innerHTML = "21";
             }
         }else{
-            //if(txt_num[i]!=" "){
-            txt_num.innerHTML = "48";
+            //txt_num.innerHTML = "48";
             num2 += txt[i];
-            //}
         }
         //txt_num.innerHTML = num1;  
     }
-    txt_num.innerHTML = num2; 
+    //txt_num.innerHTML = num2; 
     var first = parseInt(num1,2);
     var second = parseInt(num2,2);
     switch(oper){
            case 1:
                 var out = first + second; 
-                txt_num.innerHTML = out.toString();
+                txt_num.innerHTML = out.toString(2);
                 break;
            case 2:
                 var out = first - second;
-                txt_num.innerHTML = out;
+                txt_num.innerHTML = out.toString(2);
                 break;
            case 3:
                 var out = first*second;
-                txt_num.innerHTML = out;
+                txt_num.innerHTML = out.toString(2);
                 break;
            case 4:
                 var out = first/second;
-                txt_num.innerHTML = Math.floor(out);
+                txt_num.innerHTML = Math.floor(out).toString(2);
                 break;
         default:
                txt_num.innerHTML = "0";
-    }/**/
+    }
 };
